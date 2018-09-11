@@ -1,0 +1,85 @@
+/* pc */
+.home .left .app-navbar {
+
+}
+/* 菜单 */
+.home .left .app-navbar .navbar-menu {
+  float: right;
+  position: relative;
+  /* margin-top: 80px; */
+  margin-right: 20px;
+  width: 130px;
+  list-style-type: none;
+}
+.home .left .app-navbar .navbar-menu-item {
+  position: relative;
+  margin-bottom: 10px;
+  width: auto;
+  height: 35px;
+}
+
+
+.home .left .app-navbar .navbar-menu-item a {
+  position: absolute;
+  padding-left: 10px;
+  right: 0;
+  display: block;
+  height: 35px;
+  width: 100%;
+  text-align: left;
+  letter-spacing: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 35px;
+  border: 2px solid;
+  color: #5a6d7b;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.home .left .app-navbar .navbar-menu-item a:hover,
+.home .left .app-navbar .navbar-menu-item .router-link-active {
+  color: #000;
+  border: 2px solid #64F5FC;
+  background: #64F5FC;
+}
+
+
+
+
+
+
+
+
+/* mobile */
+#app-header .app-navbar {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #app-header .app-navbar {
+    position: relative;
+    margin-left: 10px;
+    display: block;
+    height: 100%;
+    line-height: 40px;
+    /* border-top: 1px solid;
+    border-bottom: 1px solid; */
+  }
+}
+@media screen and (max-width: 768px) {
+  #app-header .navbar-menu-item a{
+    position: relative;
+    margin: 7px;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border: 2px solid;
+    color: #5a6d7b;
+    font-size: 11px;
+  }
+  #app-header .navbar-menu-item .router-link-active {
+    color: #000;
+    border: 2px solid #64F5FC;
+    background: #64F5FC;
+  }
+}

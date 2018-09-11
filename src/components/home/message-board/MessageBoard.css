@@ -1,0 +1,112 @@
+.home-messageboard {
+  width: 100%;
+  height: auto;
+  padding: 0 0 20px 0;
+  /* overflow-y: hidden; */
+}
+
+.messageboard-title {
+  position: relative;
+}
+
+.messageboard-title > div{
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 4px;
+  /* height: 30px; */
+  border-bottom: 1px solid;
+  display: inline-block;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.messageboard-title >div> .bedeck {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: -5px;
+  right: -10px;
+  width: 12px;
+  height: 1px;
+  background: #64F5FC;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.messageboard-title > p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.messageboard-title > p > span {
+  color:#f46135;
+}
+
+.messageboard-title .home-messageboard-add{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid;
+  padding: 5px;
+  background: rgba(0,0,0,0);
+  color: #87B9CB;
+  cursor: pointer;
+}
+
+.messageboard-list {
+  position: relative;
+  margin-left: 10px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  display: block;
+  height: 90%;
+  border-left: 1px solid #64F5FC;
+}
+
+.messageboard-list .bedeck {
+  position: absolute;
+  top: -5px;
+  left: -11px;
+  width: 12px;
+  height: 1px;
+  background: #64F5FC;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.messageboard-list ul {
+  list-style-type: none;
+  height: 100%;
+  overflow-y: hidden;
+}
+.messageboard-list ul:hover {
+  overflow-y: auto;
+}
+.messageboard-list ul li{
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.messageboard-list .messageboard-name {
+  margin-right: 120px;
+  overflow: hidden;
+}
+.messageboard-list .messageboard-date {
+  position: absolute;
+  top: 0;right: 0;
+  width: 120px;
+  text-align: center;
+  background: #124149;
+  overflow: hidden;
+}
+
+.messageboard-list .messageboard-content{
+  overflow: hidden;
+}

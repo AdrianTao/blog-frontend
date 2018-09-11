@@ -1,0 +1,110 @@
+/*
+ * @Author: Adrian.taojun 
+ * @Date: 2018-08-15 21:15:47 
+ * @Last Modified by: Adrian.taojun
+ * @Last Modified time: 2018-08-15 21:20:34
+ *
+ * 以home 作为基础css类名
+ */
+.home {
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  z-index: 0;
+}
+/* mobile */
+@media screen and (max-width: 768px) {
+  .home {
+    transform: scale(1) rotateY(0deg)!important;
+    -webkit-transform: scale(1) rotateY(0)!important;
+  }
+}
+
+/* 面板公共css */
+.home .box {
+  position: relative;
+  float: left;
+  display: block;
+  height: 100%;
+  background: url(../../assets/panel-backgrounp.png);
+}
+.home .box > .panel {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .home .box > .panel {
+    padding: 0 5px;
+  }
+}
+
+
+/* 左面板 */
+.home .left {
+  width: 25%;
+  /* max-width: 400px; */
+  transform: rotateY(8deg);
+  -webkit-transform: rotateY(8deg);
+  transform-origin: right;
+  -webkit-transform-origin: right;
+  border-right: 0;
+}
+/* mobile */
+@media screen and (max-width: 768px) {
+  .home .left {
+    display: none;
+  }
+}
+.home .left .panel{
+  padding: 20px;
+  padding-top: 88px;
+  max-width: 400px;
+}
+
+/* 中面板 */
+.home .center {
+  width: 50%;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform-origin: center;
+  -webkit-transform-origin: center;
+  border-left: 0;
+  border-right: 0;
+}
+/* mobile */
+@media screen and (max-width: 768px) {
+  .home .center {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 950px) {
+  .home .center {
+    width: 75%;
+  }
+}
+
+.home .center .panel{
+  padding: 88px 10px 0px 10px;
+}
+
+
+/* 右面板 */
+.home .right {
+  width: 25%;
+  transform: rotateY(-8deg);
+  -webkit-transform: rotateY(-8deg);
+  transform-origin: left;
+  -webkit-transform-origin: left;
+  border-left: 0;
+}
+/* mobile */
+@media screen and (max-width: 950px) {
+  .home .right {
+    display: none;
+  }
+}
+
+.home .right .panel {
+  padding: 20px;
+  padding-top: 88px;
+  max-width: 400px;
+}
